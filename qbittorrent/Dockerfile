@@ -3,10 +3,10 @@ FROM alpine:latest as builder
 
 WORKDIR /opt
 
-ARG VERSION=4.3.4.11
+ARG VERSION=4.5.0.10
 
-RUN wget https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$VERSION/qbittorrent-nox_x86_64-linux-musl_static.zip && \
-    unzip qbittorrent-nox_x86_64-linux-musl_static.zip && \
+RUN wget https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$VERSION/qbittorrent-enhanced-nox_x86_64-linux-musl_static.zip && \
+    unzip qbittorrent-enhanced-nox_x86_64-linux-musl_static.zip && \
     chmod a+x qbittorrent-nox
 
 
