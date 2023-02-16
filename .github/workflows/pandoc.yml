@@ -5,7 +5,7 @@ on:
     branches: [ master ]
     paths:
       - '.github/workflows/pandoc.yml'
-      - '!pandoc/**'
+      - 'pandoc/**'
 
 jobs:
   build:

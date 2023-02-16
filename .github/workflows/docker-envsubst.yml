@@ -5,7 +5,7 @@ on:
     branches: [ master ]
     paths:
       - '.github/workflows/docker-envsubst.yml'
-      - '!docker-envsubst/**'
+      - 'docker-envsubst/**'
 
 jobs:
   build:
